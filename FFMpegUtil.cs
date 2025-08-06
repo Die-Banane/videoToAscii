@@ -10,10 +10,13 @@ public class FFMpegUtil
     {
         CLear();
 
+        if (!Directory.Exists(@"frames"))
+            Directory.CreateDirectory(@"frames");
+
         FFMpegArguments
             .FromFileInput(input)
             .OutputToFile(@"frames/out-%04d.png", true, options => options
-                .WithFramerate(24))
+                .Resize(60, 34))
             .ProcessSynchronously();
     }
 

@@ -17,3 +17,4 @@
 /home/jonas/Schreibtisch/Projekte/videoToAscii/obj/Debug/net9.0/videoToAscii.genruntimeconfig.cache
 /home/jonas/Schreibtisch/Projekte/videoToAscii/obj/Debug/net9.0/ref/videoToAscii.dll
 /home/jonas/Schreibtisch/Projekte/videoToAscii/bin/Debug/net9.0/SixLabors.ImageSharp.dll
+/home/jonas/Schreibtisch/Projekte/videoToAscii/obj/Debug/net9.0/videoToAscii.sourcelink.json
