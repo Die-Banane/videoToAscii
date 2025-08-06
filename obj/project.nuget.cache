@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "f96wj9CMkJ0=",
+  "success": true,
+  "projectFilePath": "/home/jonas/Schreibtisch/Projekte/videoToAscii/videoToAscii.csproj",
+  "expectedPackageFiles": [
+    "/home/jonas/.nuget/packages/ffmpegcore/5.2.0/ffmpegcore.5.2.0.nupkg.sha512",
+    "/home/jonas/.nuget/packages/instances/3.0.1/instances.3.0.1.nupkg.sha512",
+    "/home/jonas/.nuget/packages/sixlabors.imagesharp/3.1.11/sixlabors.imagesharp.3.1.11.nupkg.sha512",
+    "/home/jonas/.nuget/packages/system.text.json/9.0.2/system.text.json.9.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}
