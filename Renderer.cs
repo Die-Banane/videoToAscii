@@ -22,9 +22,9 @@ public class Renderer
     {
         foreach (var frame in _buffer)
         {
-            Console.SetCursorPosition(0, 0);
+            Console.Clear();
             Console.Write(frame);
-            await Task.Delay(TimeSpan.FromMilliseconds(83.2));
+            await Task.Delay(TimeSpan.FromSeconds(1));
         }
     }
 

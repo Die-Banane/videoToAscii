@@ -3,7 +3,7 @@ using SixLabors.ImageSharp;
 using SixLabors.ImageSharp.PixelFormats;
 using videoToAscii;
 
-string input = @"/home/jonas/Downloads/videoplayback.mp4";
+string input = @"/home/jonas/Downloads/testvideo.mp4";
 
 FFMpegUtil.Extract(input);
 

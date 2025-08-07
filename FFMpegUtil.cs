@@ -8,10 +8,10 @@ public class FFMpegUtil
 {
     public static void Extract(string input)
     {
-        CLear();
-
         if (!Directory.Exists(@"frames"))
             Directory.CreateDirectory(@"frames");
+
+        CLear();
 
         FFMpegArguments
             .FromFileInput(input)
