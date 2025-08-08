@@ -1,6 +1,4 @@
-using System;
 using FFMpegCore;
-using FFMpegCore.Arguments;
 
 namespace videoToAscii;
 

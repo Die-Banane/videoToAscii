@@ -1,6 +1,3 @@
-using System;
-using System.Security.Cryptography.X509Certificates;
-using FFMpegCore.Arguments;
 using SixLabors.ImageSharp;
 using SixLabors.ImageSharp.PixelFormats;
 
@@ -12,7 +9,15 @@ public class Renderer
 
     public Renderer()
     {
-        foreach (var frame in Directory.GetFiles(@"frames"))
+        var frames = Directory.GetFiles(@"frames")
+                        .OrderBy(path =>
+                        {
+                            var fileName = Path.GetFileNameWithoutExtension(path);
+                            return int.Parse(fileName.Split("-").Last());
+                        })
+                        .ToList();
+
+        foreach (var frame in frames)
         {
             _buffer.Add(Render(Image.Load<Rgba32>(frame)));
         }
@@ -24,7 +29,7 @@ public class Renderer
         {
             Console.Clear();
             Console.Write(frame);
-            await Task.Delay(TimeSpan.FromSeconds(1));
+            await Task.Delay(TimeSpan.FromMilliseconds(41.6));
         }
     }
 
